@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>МБОУ Степновская СОШ - Мой любимый предмет</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/school_icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__info">
+            <div class="info__logo">
+                МБОУ Степновская СОШ
+            </div>
+            <div class="info__subtitle">
+                Алтайский край, Родинский район, с. Степное
+            </div>
+        </div>
+        <div class="header__nav">
+            <ul class="nav__menu">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../pages/classroom.html">Классная комната</a></li>
+                <li><a href="../pages/favoritesubject.html">Любимый предмет</a></li>
+                <li><a href="../pages/aboutme.html">О себе</a></li>
+                <li><a href="../pages/test.html">Тест</a></li>
+            </ul>
+        </div>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../pages/classroom.html">Классная комната</a></li>
+                <li><a href="../pages/favoritesubject.html">Любимый предмет</a></li>
+                <li><a href="../pages/aboutme.html">О себе</a></li>
+                <li><a href="../pages/test.html">Тест</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <script language=javaScript src="../js/aboutme.js"></script>
+
+        <div class="slider">
+            <div class="slider__images">
+                <img src="../images/me1.png" alt="Photo 1" class="slide active">
+                <img src="../images/me2.png" alt="Photo 2" class="slide">
+                <img src="../images/me3.png" alt="Photo 3" class="slide">
+            </div>
+
+            <div class="slider__buttons">
+                <button class="buttons__back" onclick="prevSlide()">&#8249;</button>
+                <button class="buttons__forward" onclick="nextSlide()">&#8250;</button>
+            </div>
+
+            <div class="slider__dots">
+                <span class="dot active" onclick="showSlide(1)"></span>
+                <span class="dot" onclick="showSlide(2)"></span>
+                <span class="dot" onclick="showSlide(3)"></span>
+            </div>
+        </div>
+
+        <div class="main__about-me">
+            Меня зовут Кирилл Колодинов. Мне 18 лет. Мой дом находится в центральной части Барнаула, в районе Пионера.
+            Учусь в АлтГТУ им. И.И. Ползунова и домой возвращаюсь, самое позднее, в восемь вечера. Не курю, выпиваю изредка.
+            Ложусь спать в 11 вечера и убеждаюсь, что получаю ровно восемь часов сна, несмотря ни на что. 
+            Перед сном я пью тёплое молоко, а также минут двадцать уделяю разминке, поэтому до утра сплю без особых проблем. 
+            Утром я просыпаюсь, не чувствуя ни усталости, ни стресса, словно младенец. На медосмотре мне сказали, что никаких проблем нет.
+            Я пытаюсь донести, что я обычный человек, который хочет жить спокойной жизнью.
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__info">
+            <div class="info__contact">
+                <div class="contact__adress">Наш адрес</div>
+                <div class="contact__school">с. Степное, ул. Школьная, д. 8.</div>
+                <div class="contact__contacts">Контакты</div>
+                <div class="contact__phone">Телефон: +7 (385) 632-74-85</div>
+                <div class="contact__email">Email: step__school@mail.ru</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

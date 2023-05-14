@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="../js/test.js"></script>
+    <title>МБОУ Степновская СОШ - Главная страница</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="images/school_icon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__info">
+            <div class="info__logo">
+                МБОУ Степновская СОШ
+            </div>
+            <div class="info__subtitle">
+                Алтайский край, Родинский район, с. Степное
+            </div>
+        </div>
+        <div class="header__nav">
+            <ul class="nav__menu">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../pages/classroom.html">Классная комната</a></li>
+                <li><a href="../pages/favoritesubject.html">Любимый предмет</a></li>
+                <li><a href="../pages/aboutme.html">О себе</a></li>
+                <li><a href="../pages/test.html">Тест</a></li>
+            </ul>
+        </div>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a href="../index.html">Главная</a></li>
+                <li><a href="../pages/classroom.html">Классная комната</a></li>
+                <li><a href="../pages/favoritesubject.html">Любимый предмет</a></li>
+                <li><a href="../pages/aboutme.html">О себе</a></li>
+                <li><a href="../pages/test.html">Тест</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="test">
+
+            <form name="test">
+                <p>1. В каком году состоялось открытие школы?</p>
+                <input type="radio" name="q1" value="a"> 1964<br>
+                <input type="radio" name="q1" value="b"> 1975<br>
+                <input type="radio" name="q1" value="c"> 1963<br>
+                <input type="radio" name="q1" value="d"> 1952<br><br>
+
+                <p>2. Какой мой любимый предмет?</p>
+                <input type="radio" name="q2" value="a"> Информатика<br>
+                <input type="radio" name="q2" value="b"> Русский язык<br>
+                <input type="radio" name="q2" value="c"> Алгебра<br>
+                <input type="radio" name="q2" value="d"> Физика<br><br>
+
+                <p>3. В каком году я стал выпускником?</p>
+                <input type="radio" name="q3" value="a"> 2020<br>
+                <input type="radio" name="q3" value="b"> 2019<br>
+                <input type="radio" name="q3" value="c"> 2022<br>
+                <input type="radio" name="q3" value="d"> 2021<br><br>
+
+                <p>4. Как меня зовут?</p>
+                <input type="radio" name="q4" value="a"> Кирилл Колодинов<br>
+                <input type="radio" name="q4" value="b"> Артемий Куцев<br>
+                <input type="radio" name="q4" value="c"> Илья Карпов<br>
+                <input type="radio" name="q4" value="d"> Юлия Малышева<br><br>
+
+                <p>5. Сколько мне лет?</p>
+                <input type="radio" name="q5" value="a"> 19<br>
+                <input type="radio" name="q5" value="b"> 18<br>
+                <input type="radio" name="q5" value="c"> 17<br>
+                <input type="radio" name="q5" value="d"> 20<br><br>
+                <button type="button" onclick="checkAnswers()">Завершить тест</button>
+            </form>
+            <p id="result"></p>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__info">
+            <div class="info__contact">
+                <div class="contact__adress">Наш адрес</div>
+                <div class="contact__school">с. Степное, ул. Школьная, д. 8.</div>
+                <div class="contact__contacts">Контакты</div>
+                <div class="contact__phone">Телефон: +7 (385) 632-74-85</div>
+                <div class="contact__email">Email: step__school@mail.ru</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
