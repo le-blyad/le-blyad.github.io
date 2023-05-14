@@ -204,6 +204,12 @@ input[type="radio"] {
         text-align: center;
     }
 
+        .class-11 {
+        display: block;
+        text-align: center;
+        margin-right: auto;
+        margin-top: 3%;
+    }
 
 
     .burger__menu {
@@ -958,5 +964,12 @@ input[type="radio"] {
 
     .main__table {
         font: 10px Arial, sans-serif;
+    }
+        .class-11 {
+        display: block;
+        text-align: center;
+        margin-right: auto;
+        margin-top: 30%;
+        margin-bottom: 30%;
     }
 }
